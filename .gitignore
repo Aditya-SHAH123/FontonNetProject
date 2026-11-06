@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Environment / secrets
+.env
+*.env
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Large data (stored in FONTANNET_DATA_DIR, never in git)
+data/
+cfd_cases/
+results/raw/
+logs/
+
+# OpenFOAM outputs (if a case is ever run inside the repo by mistake)
+processor*/
+postProcessing/
+*.foam
+*.vtk
+*.vtu
+*.OpenFOAM
+
+# 3D printing / meshes (large)
+*.stl.bak
